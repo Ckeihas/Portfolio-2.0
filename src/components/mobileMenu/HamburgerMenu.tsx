@@ -1,5 +1,5 @@
 import './HamburgerMenu.scss'
-import React, { useRef, useState } from 'react'
+import { useRef, useState } from 'react'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import CustomLink from '../CustomLink';

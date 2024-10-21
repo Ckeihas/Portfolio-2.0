@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom"
 import './Navbar.scss'
 import CustomLink from "./CustomLink"
 import gsap from "gsap"
@@ -24,8 +23,6 @@ const Navbar = (navStyles: IStyles) => {
 
     linkRef.current.forEach(element => {
       if(element){
-        const target = element.querySelector('a');
-
         Observer.create({
           target: element,
           type: 'pointer',

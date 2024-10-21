@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef } from 'react'
 import './Projects.scss'
 
 import { Observer } from 'gsap/Observer';

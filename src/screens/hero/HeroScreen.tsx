@@ -4,7 +4,7 @@ import ProfilePicture from '../../assets/profile2.png'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Observer } from 'gsap/Observer';
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import CustomLink from '../../components/CustomLink'
 import HamburgerMenu from '../../components/mobileMenu/HamburgerMenu'
 
@@ -20,8 +20,7 @@ const HeroScreen = () => {
     //Open hero screen animations
     useGSAP(() => {
         const tl = gsap.timeline({});
-        const mm = gsap.matchMedia();
-        const screenWidth = window.innerWidth;
+    
 
         
         tl.to('#heroName', {

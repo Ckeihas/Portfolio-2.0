@@ -1,4 +1,3 @@
-import React from 'react'
 import Angular from '../../assets/angular.png'
 import Azure from '../../assets/azure.png'
 import CSharp from '../../assets/c-sharp.png'
