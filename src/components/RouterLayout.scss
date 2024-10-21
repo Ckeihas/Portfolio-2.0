@@ -1,0 +1,147 @@
+@import '../responsive.scss';
+
+.page{
+    opacity: 1;
+    overflow: hidden;
+}
+
+.white-transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 900;
+    transform: translateX(-100%);
+}
+
+.black-transition{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    z-index: 1001;
+    transform: translateY(-100%);
+}
+
+.project-transition-left{
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+.project-transition-right{
+    
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+.project-transition-top{
+    
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+.project-transition-bottom{
+    
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 999;
+}
+
+.someText{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    top: 0%;
+    left: 0%;
+    z-index: 1000;
+    font-size: 100px;
+    font-weight: 200;
+    color: white;
+    display: none;
+    @include sm{
+        font-size: 60px;
+    }
+}
+
+.projectsText{
+    position: absolute;
+    overflow: hidden;
+    opacity: 0;
+    bottom: 0%;
+    right: 0%;
+    z-index: 1000;
+    font-size: 100px;
+    font-weight: 200;
+    color: white;
+    display: none;
+    @include sm{
+        font-size: 60px;
+    }
+}
+
+.cube{
+    opacity: 0;
+    position: absolute;
+    overflow: hidden; 
+    width: 100%;
+    height: 100%;
+    background-color: red;
+    
+}
+
+.invisible-cube{
+    position: absolute;
+    width: 120%;
+    height: 120%;
+}
+
+.top-text{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    font-size: 100px;
+    font-weight: 200;
+    color: red;
+}
+
+.bottom-text{
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    font-size: 100px;
+    font-weight: 100;
+    color: red;
+}
+
+.stairs-cont{
+    position: absolute;
+    width: 100%;
+    flex-direction: row;
+    display: none;
+    z-index: 1001;
+}
+
+.stair{
+    position: relative;
+    width: 10%;
+    background-color: black;
+    display: none;
+}

@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../../responsive.scss';
+
+.hero-layout .top-link,
+.hero-layout .lower-link,
+.hero-layout .left-link,
+.hero-layout .right-link,
+.hero-layout .heroInfo-cont h2,
+.hero-layout .threeDSphere {
+  opacity: 0;
+}
+
+.hero-layout .top-link,
+.hero-layout .lower-link,
+.hero-layout .left-link,
+.hero-layout .right-link{
+  @include sm{
+    opacity: 0 !important;
+    display: none !important;
+  }
+}
+
+.hero-layout .hero-name {
+  opacity: 0;
+}
+
+.hero-layout{
+    position: relative;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+a{
+    font-family: "Roboto", sans-serif;
+    font-size: 28px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 17px;
+    color: black;
+    cursor: pointer;
+}
+
+.top-link{
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    width: 200px;
+    text-align: center; 
+    line-height: 1;
+}
+
+.letter{
+    display: inline-block;
+}
+
+.lower-link{
+    position: absolute;
+    bottom: 3%;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    width: 200px;
+    text-align: center; 
+    line-height: 1;
+
+    @include sm{
+        opacity: 0;
+    }
+}
+
+.left-link{
+    position: absolute;
+    left: -1.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(-90deg);
+    white-space: nowrap;
+    width: 200px;
+    text-align: center; 
+    line-height: 1;
+
+    @include sm{
+        opacity: 0;
+    }
+}
+
+.right-link{
+    position: absolute;
+    right: -1.5%;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+    white-space: nowrap;
+    width: 200px;
+    text-align: center; 
+    line-height: 1;
+
+    @include sm{
+        opacity: 0;
+    }
+}
+
+.heroInfo-cont{
+   display: flex;
+   flex-direction: column;
+
+   @include md{
+    margin-left: 100px;
+   }
+
+   @include sm{
+    
+   }
+   
+}
+
+.hero-name{
+    font-family: "Roboto", sans-serif;
+    font-weight: 200;
+    letter-spacing: 14px;
+
+    @include md{
+        font-size: 18px;
+        margin-left: 80px;
+        margin-bottom: 10px;
+        width: 300px;
+        letter-spacing: 10px; 
+    }
+
+    @include sm{
+        font-size: 18px;
+        margin-left: 80px;
+        width: 300px;
+        margin-bottom: 10px;
+        letter-spacing: 10px; 
+    }
+}
+
+h2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 100;
+    letter-spacing: 8px;
+    margin-top: 40px;
+    font-size: 20px;
+    @include md{
+        font-size: 14px;
+        margin-top: 30px;
+    }
+    @include sm{
+        font-size: 14px;
+        margin-top: 30px;
+        margin-right: 200px;
+    }
+}
+
+.threeDSphere{
+    position: relative;
+    width: 600px;
+    height: 600px;
+}
+
+.profileImg{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    height: 200px;
+    border-radius: 1000px;
+    object-fit: cover;
+    object-position: 50% 35%;
+    animation: animate 2s infinite ease alternate;
+
+    @include md{
+        width: 150px;
+        height: 150px;
+        right: 30%;
+    }
+
+    @include sm{
+        width: 100px;
+        height: 100px;
+        margin-right: 80px;
+    }
+}
+
+.hamburger-cont{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    top: 5%;
+    right: 7%;
+    z-index: 11;
+    cursor: pointer;
+
+    @include sm{
+        display: flex;
+    }
+}
+
+.hamburgerLine{
+    width: 30px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: black;
+    margin-bottom: 6px;
+}
+
+.mobileNav-cont{
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: white;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(600px);
+    opacity: 0;
+
+    a{
+        margin-bottom: 80px;
+        font-size: 20px;
+    }
+}
+
+@keyframes animate {
+    to {
+      transform: translateY(20px);
+    }
+}

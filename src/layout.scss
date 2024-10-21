@@ -1,0 +1,41 @@
+@import './responsive.scss';
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+.layout{
+    height: 100vh;
+    max-width: 1550px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @include lg{
+        background-color: coral;
+        max-width: 1350px;
+        
+    }
+
+    @include md{
+        background-color: blue;
+        max-width: 900px;
+    }
+
+    @include sm{
+        background-color: aqua;
+        max-width: 650;
+    }
+
+    h1{
+        font-family: "Open Sans", sans-serif;
+    }
+
+    h2{
+        font-family: "Open Sans", sans-serif;
+    }
+
+    h3{
+        font-family: "Open Sans", sans-serif;
+    }
+
+    p{
+        font-family: "Open Sans", sans-serif;
+    }
+}

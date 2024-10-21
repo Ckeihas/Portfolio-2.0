@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import '../../responsive.scss';
+
+
+.projects-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.prjocetMapCont {
+    display: flex;
+    flex-direction: column;
+    height: 100%; 
+    overflow-y: auto; 
+    scroll-snap-type: y mandatory; 
+    scroll-behavior: smooth;
+}
+
+.project-section {
+    width: 100%;
+    height: 100vh; /* Each section takes up the full viewport height */
+    scroll-snap-align: start; /* Snap to the start of the section */
+    display: flex; /* Center the content inside */
+    justify-content: center;
+    align-items: center;
+
+    @include sm{
+        flex-direction: column;
+    }
+    @include md{
+        flex-direction: column;
+    }
+}
+
+.img-cont{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    @include sm{
+        height: 40%;
+        margin-top: 80px;
+    }
+    @include md{
+        height: 40%;
+        margin-top: 80px;
+    }
+}
+.image-small {
+    width: 600px;
+    height: 100%;
+    object-fit: contain;
+
+    @include sm{
+        max-width: 300px;    
+    }
+
+    @include md{
+        width: 400px;    
+    }
+
+}
+
+.title-description-cont{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+
+    h1{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        margin-bottom: 40px;
+        font-size: 40px;
+        font-weight: 200;
+
+        @include sm{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+        @include md{
+            font-size: 30px;
+            margin-bottom: 20px;
+        }
+    }
+
+    p{
+        font-family: "Roboto", sans-serif;
+        color: white;
+        width: 80%;
+        line-height: 30px;
+
+        @include sm{
+            width: 100%;
+            line-height: 25px;
+        }
+        @include md{
+            width: 100%;
+            line-height: 25px;
+        }
+    }
+
+    @include sm{
+        width: 80%;
+    }
+}
+
+.techs-cont{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+
+    @include sm{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+
+    @include md{
+        flex-wrap: wrap;
+        margin-top: 10px;
+    }
+    
+}
+
+.tech{
+    background-color: white;
+    padding: 10px;
+    border-radius: 30px;
+    margin-right: 10px;
+    align-items: center;
+    h3{
+        font-family: "Roboto", sans-serif;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    @include sm{
+        margin-top: 10px;
+    }
+    @include md{
+        margin-top: 10px;
+    }
+}
+
+.links-cont{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.link-img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.progress-bar{
+    position: absolute;
+    z-index: 10;
+    top: 10%;
+    width: 700px;
+    background-color: white;
+    height: 10px;
+    border-radius: 20px;
+
+    @include sm{
+        width: 300px;
+    }
+}
+
+
+.prjocetMapCont::-webkit-scrollbar {
+    display: none;
+}
+  
