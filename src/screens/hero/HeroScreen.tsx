@@ -4,7 +4,7 @@ import ProfilePicture from '../../assets/profile2.png'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Observer } from 'gsap/Observer';
-import { useRef } from 'react'
+import { useEffect, useRef } from 'react'
 import CustomLink from '../../components/CustomLink'
 import HamburgerMenu from '../../components/mobileMenu/HamburgerMenu'
 
@@ -17,12 +17,34 @@ const HeroScreen = () => {
 
     const letterRefs = useRef<(HTMLSpanElement | null)[]>([]);
 
+    
     //Open hero screen animations
     useGSAP(() => {
-        const tl = gsap.timeline({});
-    
+        gsap.set('.left-link', {
+            position: 'absolute',
+            left: '-1.5%',
+            top: '50%',
+            transform: 'translateY(-50%) rotate(-90deg)',
+            whiteSpace: 'nowrap',
+            width: '200px',
+            textAlign: 'center',
+            lineHeight: 1,
+            willChange: 'transform',
+        });
+        gsap.set('.right-link', {
+            position: 'absolute',
+            right: '-1.5%',
+            top: '50%',
+            transform: 'translateY(-50%) rotate(90deg)',
+            whiteSpace: 'nowrap',
+            width: '200px',
+            textAlign: 'center',
+            lineHeight: 1,
+            willChange: 'transform',
+        });
 
-        
+        const tl = gsap.timeline({});
+       
         tl.to('#heroName', {
             opacity: 1,
             duration: 2

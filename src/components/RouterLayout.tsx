@@ -22,8 +22,8 @@ const RouterLayout = () => {
       <div className="project-transition-bottom" id='project-transition-bottom'/>
 
       <div className='stairs-cont' id='stairsCont'>
-        {Array(10).fill(null).map(() => (      
-          <div className='stair' id='stair'/>         
+        {Array(10).fill(null).map((_, index) => (      
+          <div className='stair' id='stair' key={index}/>         
         ))}
       </div>
 
