@@ -76,13 +76,12 @@ a{
     position: absolute;
     left: -1.5%;
     top: 50%;
-    transform: translateY(-50%);
-    transform: rotate(-90deg);
+    transform: translateY(-50%) rotate(-90deg);
     white-space: nowrap;
     width: 200px;
     text-align: center; 
     line-height: 1;
-
+    will-change: transform;
     @include sm{
         opacity: 0;
     }
@@ -92,13 +91,12 @@ a{
     position: absolute;
     right: -1.5%;
     top: 50%;
-    transform: translateY(-50%);
-    transform: rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
     white-space: nowrap;
     width: 200px;
     text-align: center; 
     line-height: 1;
-
+    will-change: transform;
     @include sm{
         opacity: 0;
     }
