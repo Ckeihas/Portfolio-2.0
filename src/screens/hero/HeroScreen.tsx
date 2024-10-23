@@ -20,15 +20,18 @@ const HeroScreen = () => {
     
     //Open hero screen animations
     useGSAP(() => {
-        gsap.set('.left-link', {
-            
-            transform: 'translateY(-50%) rotate(-90deg)',
-           
+        gsap.set('.left-link', {         
+            transform: 'translateY(-50%) rotate(-90deg)',         
         });
-        gsap.set('.right-link', {
-            
-            transform: 'translateY(-50%) rotate(90deg)',
-            
+        gsap.set('.right-link', {      
+            transform: 'translateY(-50%) rotate(90deg)',       
+        });
+
+        gsap.set('.top-link', {         
+            transform: 'translateX(-50%)',         
+        });
+        gsap.set('.lower-link', {      
+            transform: 'translateX(-50%)',       
         });
 
         const tl = gsap.timeline({});
