@@ -39,7 +39,8 @@ const projects = [
         description: "Template for modern responsive website design! Template can be easily customized for any purpose by adding for example own theme colors and images. Website is scalable by adding authentications and other functionalities for your own usage.",
         techs: ['React js', 'Tailwind'],
         image: Brainwave,
-        githubUrl: "https://github.com/Ckeihas/Brainwave-website"
+        githubUrl: "https://github.com/Ckeihas/Brainwave-website",
+        fullWebsite: 'https://brainwave-website-eight.vercel.app'
     },
     {
         id: 3,
