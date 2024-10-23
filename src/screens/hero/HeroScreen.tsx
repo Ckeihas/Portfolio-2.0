@@ -4,7 +4,7 @@ import ProfilePicture from '../../assets/profile2.png'
 import gsap from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { Observer } from 'gsap/Observer';
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 import CustomLink from '../../components/CustomLink'
 import HamburgerMenu from '../../components/mobileMenu/HamburgerMenu'
 
