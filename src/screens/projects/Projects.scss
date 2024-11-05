@@ -46,7 +46,7 @@
 
     @include sm{
         height: 40%;
-        margin-top: 80px;
+        margin-top: 60px;
     }
     @include md{
         height: 40%;
@@ -59,7 +59,7 @@
     object-fit: contain;
 
     @include sm{
-        max-width: 300px;    
+        max-width: 250px;    
     }
 
     @include md{

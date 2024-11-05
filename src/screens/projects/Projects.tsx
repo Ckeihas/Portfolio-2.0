@@ -15,6 +15,7 @@ import WorldWide from '../../assets/worldwide.png'
 import Navbar from '../../components/Navbar';
 import { useLocation } from 'react-router-dom';
 import HamburgerMenu from '../../components/mobileMenu/HamburgerMenu';
+import Drinkki from '../../assets/drinkki.png'
 
 gsap.registerPlugin(ScrollTrigger);
 gsap.registerPlugin(Observer);
@@ -27,6 +28,15 @@ declare module '*.png' {
 const projects = [
     {
         id: 1,
+        title: 'Drinkki 3D-website',
+        description: 'Dive into a beautifully designed interactive 3D website showcasing an enticing selection of soda drinks. Built with Next.js, Three.js, React Three Fiber, and Drei, this immersive experience allows you to explore vibrant 3D models of refreshing beverages in a captivating environment. Each soda can comes to life with stunning animations and engaging visuals. !NOTE: Website is not responsive yet so please review this with laptop/desktop to get full experience!',
+        techs: ['Next.js', 'Three.js', 'React Three Fiber', 'Drei'],
+        image: Drinkki,
+        githubUrl: "https://github.com/Ckeihas/Drinkki-3Dweb/tree/main",
+        fullWebsite: 'https://drinkki-3-dweb.vercel.app'
+    },
+    {
+        id: 2,
         title: 'MovieWorld',
         description: "With TMDB movie API from www.themoviedb.org, created modern movie serching app where you can find most popular, upcoming or trending movies, actors and actress and more!",
         techs: ['React Native', 'Javascript'],
@@ -34,7 +44,7 @@ const projects = [
         githubUrl: "https://github.com/Ckeihas/MovieWorldApp/tree/main"
     },
     {
-        id: 2,
+        id: 3,
         title: 'Brainwave',
         description: "Template for modern responsive website design! Template can be easily customized for any purpose by adding for example own theme colors and images. Website is scalable by adding authentications and other functionalities for your own usage.",
         techs: ['React js', 'Tailwind'],
@@ -43,7 +53,7 @@ const projects = [
         fullWebsite: 'https://brainwave-website-eight.vercel.app'
     },
     {
-        id: 3,
+        id: 4,
         title: "Crypto App",
         description: "Following cryptocurrency rates by using CryptoLore API, created with simple UI and help of Expo. Easily expandable for creating user profile and connecting database to store your favourite crypto currencies! ",
         techs: ['React Native', 'Typescript', 'CryptoLore API'],
@@ -51,7 +61,7 @@ const projects = [
         githubUrl: "https://github.com/Ckeihas/CoinMotion-App"
       },
     {
-        id: 4,
+        id: 5,
         title: 'Car Rental',
         description: "Created car rental website where you can explore variety of cars and see details from selected cars. Using 'Cars by API-Ninjas-API' from rapidapi.com",
         techs: ['Nextjs', 'Typescript', 'Tailwind'],
@@ -60,7 +70,7 @@ const projects = [
         fullWebsite: 'https://car-rental-website-njzk.vercel.app'
     },
     {
-        id: 5,
+        id: 6,
         title: 'Foodi Full-Stack App',
         techs: ['React Native', 'Typescript', 'Nodejs', 'Express', 'Firebase', 'GCP'],
         description: "Work in progress. FullStack application with backend and database. Social media app where you can post pictures of your meals, add friends, send grocerie lists to your friends, send specific meals, preparation instructions for every recipe created, follow your own diet, add meal preps for each day and much more to come!",

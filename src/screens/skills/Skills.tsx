@@ -57,7 +57,7 @@ const techStack = [
 ]
 
 const Skills = () => {
-
+    
     const location = useLocation();
     useGSAP(() => {
         const tl = gsap.timeline({});
