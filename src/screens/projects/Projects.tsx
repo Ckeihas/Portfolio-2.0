@@ -11,7 +11,7 @@ import CarHub from '../../assets/carhub.png'
 import FooditApp from '../../assets/foodi.png'
 import NftApp from '../../assets/nft-app.png'
 import GithubLogo from '../../assets/github-logo.png'
-import WorldWide from '../../assets/worldwide.png'
+import WorldWide from '../../assets/domain.png'
 import Navbar from '../../components/Navbar';
 import { useLocation } from 'react-router-dom';
 import HamburgerMenu from '../../components/mobileMenu/HamburgerMenu';
@@ -132,6 +132,15 @@ const Projects = () => {
             y: 0,
             opacity: 1
         })
+
+        gsap.to('#domain-icon', {
+            y: -9,
+            ease: 'bounce.in',
+            duration: 2,
+            repeat: -1,
+            yoyo: true,
+            repeatDelay: 0.2
+        })
     }, [])
 
   return (
@@ -174,7 +183,7 @@ const Projects = () => {
                             </a>
                             {project.fullWebsite ? 
                             <a href={project.fullWebsite}>
-                                <img className='link-img' src={WorldWide}/>
+                                <img className='link-img' src={WorldWide} id='domain-icon'/>
                             </a>
                             :
                             <div /> 
